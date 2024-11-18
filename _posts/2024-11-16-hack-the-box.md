@@ -17,6 +17,6 @@ image:
 
 Here are my write-ups for Hack The Box machines. These write-ups will be password-protected, as requested by Hack The Box. The password is the `machine's root hash`. Once the machine is no longer active, I will release the write-ups.
 
-| Name     | Difficulty   | Link                 |
-| :------- |:------------ | :--------------------|
-| Yummy    | Hard         | [yummy](/htb/yummy)  |
+| Name     | Difficulty   | Link        |
+| :------- |:------------ | :---------- |
+| Yummy    | Hard         | placeholder |
