@@ -1,4 +1,6 @@
 ---
+layout: default
+permalink: /htb/cicada
 title: Cicada
 description: >-
   Hack the box Cicada

@@ -1,4 +1,6 @@
 ---
+layout: default
+permalink: /htb/sea
 title: Sea
 description: >-
   Hack the box Sea

@@ -1,4 +1,6 @@
 ---
+layout: default
+permalink: /htb/yummy
 title: Yummy
 description: >-
   Hack the box Yummy

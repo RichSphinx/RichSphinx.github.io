@@ -1,4 +1,6 @@
 ---
+layout: default
+permalink: /htb/resource
 title: Resource
 description: >-
   Hack the box Resource
