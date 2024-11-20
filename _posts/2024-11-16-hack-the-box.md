@@ -6,7 +6,7 @@ author: richsphinx
 date: 2024-11-16
 categories: [HackTheBox, Pentesting]
 tags: [HackTheBox]
-pin: false
+pin: true
 media_subpath: '/assets/img'
 image:
   path: /lorem_ipsum.png
@@ -17,6 +17,9 @@ image:
 
 Here are my write-ups for Hack The Box machines. These write-ups will be password-protected, as requested by Hack The Box. The password is the `machine's root hash`. Once the machine is no longer active, I will release the write-ups.
 
-| Name     | Difficulty   | Link        |
-| :------- |:------------ | :---------- |
-| Yummy    | Hard         | placeholder |
+| Name     | OS           | Difficulty   | Link                        |
+| :------- |:-------------|:------------ | :-------------------------- |
+| Yummy    | Linux        | Hard         | [yummy](/htb/yummy)         |
+| Cicada   | Windows      | Easy         | [Cicada](/htb/cicada)       |
+| Sea      | Linux        | Easy         | [Sea](/htb/sea)             |
+| Chemestry| Linux        | Easy         | [Chemestry](/htb/chemestry) |
