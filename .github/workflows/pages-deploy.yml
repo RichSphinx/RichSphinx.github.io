@@ -39,8 +39,7 @@ jobs:
         env:
           DECRYPT_KEY: ${{ secrets.DECRYPT_KEY }}
         run: |
-           chmod +x crypto.sh
-          ./crypto.sh "$DECRYPT_KEY"
+           chmod +x crypto.sh && ./crypto.sh "$DECRYPT_KEY"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
