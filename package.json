@@ -25,7 +25,9 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "hexo-blog-encrypt": "^3.1.9",
+    "staticrypt": "^3.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",

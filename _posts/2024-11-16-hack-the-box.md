@@ -22,4 +22,4 @@ Here are my write-ups for Hack The Box machines. These write-ups will be passwor
 | Yummy    | Linux        | Hard         | [Yummy](/htb/yummy)         |
 | Cicada   | Windows      | Easy         | [Cicada](/htb/cicada)       |
 | Sea      | Linux        | Easy         | [Sea](/htb/sea)             |
-| Chemestry| Linux        | Easy         | [Chemestry](/htb/chemestry) |
+| Chemistry| Linux        | Easy         | [Chemistry](/htb/chemistry) |
