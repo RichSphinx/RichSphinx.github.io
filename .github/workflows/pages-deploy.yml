@@ -34,7 +34,12 @@ jobs:
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-
+      - name: Crypto
+        shell: bash
+        env:
+          DECRYPT_KEY: ${{ secrets.DECRYPT_KEY }}
+        run: |
+          crypto.sh "$DECRYPT_KEY"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
