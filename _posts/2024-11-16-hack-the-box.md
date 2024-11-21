@@ -1,7 +1,7 @@
 ---
 title: Hack the box
 description: >-
-  Hack the box writeups
+  My Hack the box writeups
 author: richsphinx
 date: 2024-11-16
 categories: [HackTheBox, Pentesting]
