@@ -37,7 +37,7 @@ jobs:
       - name: Crypto
         shell: bash
         env:
-          DECRYPT_KEY: '{{ secrets.DECRYPT_KEY }}'
+          DECRYPT_KEY: '${{ secrets.DECRYPT_KEY }}'
         run: |
            chmod +x crypto.sh && ./crypto.sh "$DECRYPT_KEY"
       - name: Setup Pages
