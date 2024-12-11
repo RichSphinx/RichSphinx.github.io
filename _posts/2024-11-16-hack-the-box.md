@@ -23,3 +23,4 @@ Here are my write-ups for Hack The Box machines. These write-ups will be passwor
 | Cicada   | Windows      | Easy         | [Cicada](/htb/cicada)       |
 | Sea      | Linux        | Easy         | [Sea](/htb/sea)             |
 | Chemistry| Linux        | Easy         | [Chemistry](/htb/chemistry) |
+| Alert    | Linux        | Easy         | [Alert](/htb/alert)         |
