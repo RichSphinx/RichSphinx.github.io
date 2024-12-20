@@ -15,12 +15,11 @@ image:
 
 Here are my write-ups for Hack The Box machines. These write-ups will be password-protected, as requested by Hack The Box. The password is the `machine's root hash`. Once the machine is no longer active, I will release the write-ups.
 
-| Name     | OS           | Difficulty   | Link                        |
-| :------- |:-------------|:------------ | :-------------------------- |
-| Alert    | Linux        | Easy         | [Alert](/htb/alert)         |
-| Chemistry| Linux        | Easy         | [Chemistry](/htb/chemistry) |
-| Cicada   | Windows      | Easy         | [Cicada](/htb/cicada)       |
-| Resource | Linux        | Hard         | [Resource](/htb/resource)   |
-| Sea      | Linux        | Easy         | [Sea](/htb/sea)             |
-| Yummy    | Linux        | Hard         | [Yummy](/htb/yummy)         |
-
+| Name     | OS           | Difficulty   | Status  | Link                             |
+| :------- |:-------------|:------------ | :-------| :--------------------------------|
+| Alert    | Linux        | Easy         | Active  | [Alert](/htb/alert)              |
+| Chemistry| Linux        | Easy         | Active  | [Chemistry](/htb/chemistry)      |
+| Cicada   | Windows      | Easy         | Active  | [Cicada](/htb/cicada)            |
+| Sea      | Linux        | Easy         | Active  | [Sea](/htb/sea)                  |
+| Yummy    | Linux        | Hard         | Active  | [Yummy](/htb/yummy)              |
+| Resource | Linux        | Hard         | Retired | [Resource](/retired/resource)    |
