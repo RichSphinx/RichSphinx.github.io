@@ -64,10 +64,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
            node-version: 9.2.0
+        
+      - name: Install staticrypt
+        shell: bash
+        run: npm install -g staticrypt
 
       - name: Encrypt Front
         shell: bash
-        run: npm install -g staticrypt && chmod +x frontEncrypt.sh && ./frontEncrypt.sh
+        run: chmod +x frontEncrypt.sh && ./frontEncrypt.sh
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
