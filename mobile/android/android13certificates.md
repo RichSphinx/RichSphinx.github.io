@@ -6,8 +6,6 @@ description: >-
   How to intercept and manipulate Android 13 or lower traffic using Burp Suite.
 author: richsphinx
 date: 2024-12-11
-categories: [Android, Mobile Pentesting]
-tags: [Android]
 media_subpath: '/assets/img/mobile/android/'
 image:
   path: /androidCert.png
