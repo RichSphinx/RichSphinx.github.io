@@ -57,7 +57,7 @@ for FILE in $FILES; do
     fi
 
     # Encrypt the corresponding HTML file
-    echo "Encrypting $TARGET_FILE with password: $PASSWORD"
+    echo "Encrypting $TARGET_FILE
     staticrypt "$TARGET_FILE" -p "$PASSWORD" --short -d "$ENCRYPT_DIR"/
 done
 
