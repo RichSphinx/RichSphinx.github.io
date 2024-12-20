@@ -17,8 +17,10 @@ Here are my write-ups for Hack The Box machines. These write-ups will be passwor
 
 | Name     | OS           | Difficulty   | Link                        |
 | :------- |:-------------|:------------ | :-------------------------- |
-| Yummy    | Linux        | Hard         | [Yummy](/htb/yummy)         |
-| Cicada   | Windows      | Easy         | [Cicada](/htb/cicada)       |
-| Sea      | Linux        | Easy         | [Sea](/htb/sea)             |
-| Chemistry| Linux        | Easy         | [Chemistry](/htb/chemistry) |
 | Alert    | Linux        | Easy         | [Alert](/htb/alert)         |
+| Chemistry| Linux        | Easy         | [Chemistry](/htb/chemistry) |
+| Cicada   | Windows      | Easy         | [Cicada](/htb/cicada)       |
+| Resource | Linux        | Hard         | [Resource](/htb/resource)   |
+| Sea      | Linux        | Easy         | [Sea](/htb/sea)             |
+| Yummy    | Linux        | Hard         | [Yummy](/htb/yummy)         |
+
