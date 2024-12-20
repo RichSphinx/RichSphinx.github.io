@@ -67,7 +67,7 @@ jobs:
 
       - name: Encrypt Front
         shell: bash
-        run: npm install staticrypt && chmod +x frontEncrypt.sh && ./frontEncrypt.sh
+        run: npm install -g staticrypt && chmod +x frontEncrypt.sh && ./frontEncrypt.sh
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3

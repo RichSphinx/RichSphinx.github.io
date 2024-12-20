@@ -58,7 +58,7 @@ for FILE in $FILES; do
 
     # Encrypt the corresponding HTML file
     echo "Encrypting $TARGET_FILE with password: $PASSWORD"
-    npx staticrypt "$TARGET_FILE" -p "$PASSWORD" -d "$ENCRYPT_DIR"/
+    staticrypt "$TARGET_FILE" -p "$PASSWORD" -d "$ENCRYPT_DIR"/
 done
 
 echo "Encryption complete!"
