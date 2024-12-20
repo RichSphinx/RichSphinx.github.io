@@ -63,7 +63,7 @@ jobs:
       - name: Setup npm
         uses: actions/setup-node@v1
         with:
-           node-version: 9.2.0
+           node-version: 18.19.0
         
       - name: Install staticrypt
         shell: bash
