@@ -4,8 +4,6 @@ description: >-
   My Hack the box writeups
 author: richsphinx
 date: 2024-11-16
-categories: [HackTheBox, Pentesting]
-tags: [HackTheBox]
 pin: true
 media_subpath: '/assets/img'
 image:
