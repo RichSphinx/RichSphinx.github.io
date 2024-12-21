@@ -13,7 +13,7 @@ image:
 
 # Hack The Box Writeups
 
-Here are my write-ups for Hack The Box machines. These write-ups will be password-protected, as requested by Hack The Box. The password is the `machine's root hash`. Once the machine is no longer active, I will release the write-ups.
+Here are my write-ups for Hack The Box machines. These write-ups will be password-protected, as requested by Hack The Box in their [TOS](https://www.hackthebox.com/tos). Once the machine is no longer active, I will release the corresponding write-up.
 
 | Name     | OS           | Difficulty   | Status  | Link                             |
 | :------- |:-------------|:------------ | :-------| :--------------------------------|
