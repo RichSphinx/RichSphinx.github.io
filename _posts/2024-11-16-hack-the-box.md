@@ -20,6 +20,6 @@ Here are my write-ups for Hack The Box machines. These write-ups will be passwor
 | Alert    | Linux        | Easy         | Active  | [Alert](/htb/alert)              |
 | Chemistry| Linux        | Easy         | Active  | [Chemistry](/htb/chemistry)      |
 | Cicada   | Windows      | Easy         | Active  | [Cicada](/htb/cicada)            |
-| Sea      | Linux        | Easy         | Active  | [Sea](/htb/sea)                  |
+| Sea      | Linux        | Easy         | Retired | [Sea](/htb/sea)                  |
 | Yummy    | Linux        | Hard         | Active  | [Yummy](/htb/yummy)              |
 | Resource | Linux        | Hard         | Retired | [Resource](/htb/resource)        |
