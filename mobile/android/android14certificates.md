@@ -122,65 +122,7 @@ Before proceeding, be sure to have:
     9a5ba575.0
     ```
 
-3. This is where things get interesting, in order for Android to accept and use our new certificate we have to mess around with `Zygote` and `APEX` processes, thankfully our good friends at [HTTPToolkit](https://httptoolkit.com/blog/android-14-install-system-ca-certificate/#how-to-install-system-ca-certificates-in-android-14) developed an script that will do this for us.
-
-    ``` bash
-    # Create a separate temp directory, to hold the current certificates
-    # Otherwise, when we add the mount we can't read the current certs anymore.
-    mkdir -p -m 700 /data/local/tmp/tmp-ca-copy
-
-    # Copy out the existing certificates
-    cp /apex/com.android.conscrypt/cacerts/* /data/local/tmp/tmp-ca-copy/
-
-    # Create the in-memory mount on top of the system certs folder
-    mount -t tmpfs tmpfs /system/etc/security/cacerts
-
-    # Copy the existing certs back into the tmpfs, so we keep trusting them
-    mv /data/local/tmp/tmp-ca-copy/* /system/etc/security/cacerts/
-
-    # Copy our new cert in, so we trust that too
-    mv $CERTIFICATE_PATH /system/etc/security/cacerts/
-
-    # Update the perms & selinux context labels
-    chown root:root /system/etc/security/cacerts/*
-    chmod 644 /system/etc/security/cacerts/*
-    chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*
-
-    # Deal with the APEX overrides, which need injecting into each namespace:
-
-    # First we get the Zygote process(es), which launch each app
-    ZYGOTE_PID=$(pidof zygote || true)
-    ZYGOTE64_PID=$(pidof zygote64 || true)
-    # N.b. some devices appear to have both!
-
-    # Apps inherit the Zygote's mounts at startup, so we inject here to ensure
-    # all newly started apps will see these certs straight away:
-    for Z_PID in "$ZYGOTE_PID" "$ZYGOTE64_PID"; do
-        if [ -n "$Z_PID" ]; then
-            nsenter --mount=/proc/$Z_PID/ns/mnt -- \
-                /bin/mount --bind /system/etc/security/cacerts /apex/com.android.conscrypt/cacerts
-        fi
-    done
-
-    # Then we inject the mount into all already running apps, so they
-    # too see these CA certs immediately:
-
-    # Get the PID of every process whose parent is one of the Zygotes:
-    APP_PIDS=$(
-        echo "$ZYGOTE_PID $ZYGOTE64_PID" | \
-        xargs -n1 ps -o 'PID' -P | \
-        grep -v PID
-    )
-
-    # Inject into the mount namespace of each of those apps:
-    for PID in $APP_PIDS; do
-        nsenter --mount=/proc/$PID/ns/mnt -- \
-            /bin/mount --bind /system/etc/security/cacerts /apex/com.android.conscrypt/cacerts &
-    done
-    wait # Launched in parallel - wait for completion here
-
-    echo "System certificate injected"
-    ```
+3. This is where things get interesting, in order for Android to accept and use our new certificate we have to mess around with `Zygote`, `APEX` and `Conscrypt`, thankfully Tim Perry at [HTTPToolkit](https://httptoolkit.com/blog/android-14-install-system-ca-certificate/#how-to-install-system-ca-certificates-in-android-14) developed an script that will do this for us. (All due rights belongs to him)
 
 4. For ease of use I'm gonna change `$CERTIFICATE_PATH` by directly inputing the path where I have my certificate.
 
@@ -270,3 +212,9 @@ Before proceeding, be sure to have:
 7. Intercepting traffic
 
 ![Burp Suite Traffic Capture](traffic_capture_android14.png)
+
+##### **NOTE:**
+
+This certificate installation method will last until the phone/emulator is rebooted, you'll have to do everything in point 6 every time you reboot.
+
+If you want to understand or read more about `Zygote`, `APEX` or `Conscrypt` follow this link [Documentation](/mobile/android/overviewAPEXZygoteandConscrypt).
