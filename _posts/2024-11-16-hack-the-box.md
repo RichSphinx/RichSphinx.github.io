@@ -7,7 +7,7 @@ date: 2024-11-16
 pin: true
 media_subpath: '/assets/img'
 image:
-  path: /hack_the_box.png
+  path: /hack_the_box.webp
   alt: Hack The Box Logo.
 ---
 

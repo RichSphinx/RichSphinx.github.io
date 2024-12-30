@@ -8,7 +8,7 @@ author: richsphinx
 date: 2024-12-11
 media_subpath: '/assets/img/mobile/android/'
 image:
-  path: /androidCert.png
+  path: /androidCert.webp
   alt: Certificate Installation on Android 13 or lower
 ---
 
@@ -29,14 +29,14 @@ Before proceeding, be sure to have:
 ### Getting our certificate
 
 1. On Burp Suite got to `proxy` tab and then `Proxy settings`
-   ![Burp Suite](burp_suite.png)
+   ![Burp Suite](burp_suite.webp)
 
 2. Go to `Import/Export CA Certificate`
 
-   ![Burp Suite Export Options](proxy_export.png)
+   ![Burp Suite Export Options](proxy_export.webp)
 
 3. Export the certificate as `DER` format
-   ![Burp Suite Export Certificate](cert_export.png)
+   ![Burp Suite Export Certificate](cert_export.webp)
 
 4. On the next step name your certificate and select where it will be stored.
 5. Now we have to do some magic to our certificate:
@@ -123,4 +123,4 @@ Before proceeding, be sure to have:
    ```
 5. Intercepting traffic
 
-![Burp Suite Traffic Capture](traffic_capture.png)
+![Burp Suite Traffic Capture](traffic_capture.webp)

@@ -5,10 +5,10 @@ title: Android 14+ certificate intallation
 description: >-
   How to install burpsuite certificate on Android 14+
 author: richsphinx
-date: 2024-12-11
+date: 2024-12-30
 media_subpath: '/assets/img/mobile/android/'
 image:
-  path: /android14Cert.png
+  path: /android14Cert.webp
   alt: Android Certificate install on Android 14+
 ---
 
@@ -31,14 +31,14 @@ Before proceeding, be sure to have:
 ### Getting our certificate
 
 1. On Burp Suite got to `proxy` tab and then `Proxy settings`
-   ![Burp Suite](burp_suite.png)
+   ![Burp Suite](burp_suite.webp)
 
 2. Go to `Import/Export CA Certificate`
 
-   ![Burp Suite Export Options](proxy_export.png)
+   ![Burp Suite Export Options](proxy_export.webp)
 
 3. Export the certificate as `DER` format
-   ![Burp Suite Export Certificate](cert_export.png)
+   ![Burp Suite Export Certificate](cert_export.webp)
 
 4. On the next step name your certificate and select where it will be stored.
 5. Now we have to do some magic to our certificate:
@@ -211,10 +211,10 @@ Before proceeding, be sure to have:
 
 7. Intercepting traffic
 
-![Burp Suite Traffic Capture](traffic_capture_android14.png)
+![Burp Suite Traffic Capture](traffic_capture_android14.webp)
 
 ##### **NOTE:**
 
 This certificate installation method will last until the phone/emulator is rebooted, you'll have to do everything in point 6 every time you reboot.
 
-If you want to understand or read more about `Zygote`, `APEX` or `Conscrypt` follow this link [Documentation](/mobile/android/overviewAPEXZygoteandConscrypt).
+If you want to understand or read more about `Zygote`, `APEX` or `Conscrypt` head over to my [Glossary](/mobile/android/glossary).
