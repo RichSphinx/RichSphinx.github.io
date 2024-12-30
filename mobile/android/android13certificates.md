@@ -22,7 +22,7 @@ This guide focuses on leveraging Burp Suite proxy certificates to facilitate Man
 Before proceeding, be sure to have:
 1. Access to the target Android device (physical or emulated).
 2. Root privileges on the target device.
-3. `adb` and a file manager with root capabilities.
+3. `adb` or a file manager with root capabilities.
 
 ## Steps to Intercept Encrypted Traffic
 
@@ -61,7 +61,7 @@ Before proceeding, be sure to have:
    9a5ba575.0  burp_cacert.der
    ```
 
-## Delivering our certificate to the target device
+## Uploading our certificate to the target device
 
 1. Using `adb push` we can add the certificate to our Android device/emulator
 
